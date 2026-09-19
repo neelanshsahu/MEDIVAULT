@@ -69,18 +69,6 @@
 
 ---
 
-## 🌊 UI Design
-
-The UI theme evokes a **calm, serene ocean at dawn**:
-
-| Token | Color | Usage |
-|-------|-------|-------|
-| Deep Ocean | `#0D3B4F` | Card backgrounds |
-| Teal | `#1A7A8A` | Primary accents |
-| Seafoam | `#A8DADC` | Text, borders |
-| Pearl White | `#F1FAEE` | Body text |
-| Calm Green | `#52B788` | Success states |
-
 **Design features:**
 - Glassmorphism cards with `backdrop-filter: blur(12px)`
 - Animated SVG wave layers + canvas particle system
@@ -92,60 +80,6 @@ The UI theme evokes a **calm, serene ocean at dawn**:
 
 ---
 
-## 🔌 API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/init-session` | Initialize SMPC session with N parties |
-| `POST` | `/api/upload-shares` | Party uploads their encrypted shares |
-| `GET` | `/api/compute-aggregate` | Trigger secure aggregation |
-| `GET` | `/api/get-result` | Return final decrypted aggregate result |
-| `GET` | `/api/audit-log` | Fetch all computation event logs |
-| `GET` | `/api/evaluation-report` | Fetch performance benchmarks |
-| `POST` | `/api/simulate-protocol` | Run full SMPC protocol end-to-end |
-| `POST` | `/api/zkp/generate` | Generate a zero-knowledge proof |
-| `POST` | `/api/zkp/verify` | Verify a zero-knowledge proof |
-| `POST` | `/api/garbled-circuit` | Run garbled circuit comparison |
-| `GET` | `/api/security-metrics` | Get security evaluation metrics |
-
----
-
-## 📁 Folder Structure
-
-```
-medivault/
-├── frontend/                   # React + Vite + TailwindCSS
-│   ├── src/
-│   │   ├── pages/              # Login, Dashboard, ComputationTheater, Results, Audit
-│   │   ├── components/         # WaveBackground, NodeGraph, EncryptionShield, Charts, HowItWorksModal
-│   │   ├── api/                # Axios client (client.js)
-│   │   ├── App.jsx             # Root component with routing
-│   │   ├── main.jsx            # Entry point
-│   │   └── index.css           # Ocean-dawn design system
-│   ├── index.html              # HTML with SEO meta tags
-│   ├── package.json
-│   ├── tailwind.config.js      # Custom theme tokens
-│   └── vite.config.js          # Dev server + API proxy
-├── backend/                    # Python FastAPI
-│   ├── smpc/                   # SMPC protocol modules
-│   │   ├── secret_sharing.py   # Shamir's (k,n) threshold scheme
-│   │   ├── aggregation.py      # Secure sum/average/count
-│   │   ├── garbled_circuit.py  # Garbled circuit simulation
-│   │   ├── homomorphic.py      # HE (TenSEAL / simulated)
-│   │   └── zkp.py              # Zero-knowledge proofs
-│   ├── data/
-│   │   └── synthetic_generator.py  # Faker-based patient data
-│   ├── evaluation/
-│   │   ├── benchmarks.py       # Performance benchmarks
-│   │   └── report_generator.py # HTML/JSON report output
-│   ├── main.py                 # FastAPI entry point
-│   └── requirements.txt
-├── notebooks/                  # Jupyter notebooks (conceptual)
-│   └── smpc_concepts.ipynb
-└── README.md
-```
-
----
 
 ## 🚀 Quick Start
 
@@ -181,10 +115,6 @@ npm install
 # Start dev server (proxies API to localhost:8000)
 npm run dev
 ```
-
-### 3. Open in Browser
-
-Navigate to **http://localhost:5173**
 
 ---
 
